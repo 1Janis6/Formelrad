@@ -56,5 +56,10 @@ public class Calculator {
 	public double pAusUundI (double spannung, double strom){return spannung*strom;}
 	public double pAusRundI (double widerstand,double strom){return widerstand*(strom*strom);}
 	public double pAusUundR (double spannung, double widerstand){return (spannung*spannung)*widerstand;}
+
+	// feature 4
+	public double IausPundR (double leistung, double widerstand){return (Math.sqrt(leistung/widerstand));}
+	public double IausPundU(double leistung, double spannung){return (leistung/spannung);}
+	public double IausUundR(double spannung, double widerstand){return (spannung/widerstand);}
 	
 }
