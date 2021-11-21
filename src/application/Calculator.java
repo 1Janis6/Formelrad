@@ -55,5 +55,8 @@ public class Calculator {
 	public double uAusRundI (double wiederstand, double strom){
 		return wiederstand*strom;
 	}
+	public double uAusPundI(double leistung, double strom){
+		return leistung/strom;
+	}
 	
 }
