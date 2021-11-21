@@ -58,5 +58,7 @@ public class Calculator {
 	public double uAusPundI(double leistung, double strom){
 		return leistung/strom;
 	}
-	
+	public double uAusPundR(double leistung, double wiederstand){
+		return Math.sqrt(leistung*wiederstand);
+	}
 }
