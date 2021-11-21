@@ -69,4 +69,7 @@ public class Calculator {
 	public double rAusPundI(double leistung, double strom){
 		return leistung/strom*strom;
 	}
+	public double rAusUundP(double spannung, double leistung){
+		return spannung*spannung/leistung;
+	}
 }
