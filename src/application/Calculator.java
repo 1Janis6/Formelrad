@@ -56,5 +56,6 @@ public class Calculator {
 	public double pAusUundI (double spannung, double strom){
 		return spannung*strom;
 	}
+	public double pAusRundI (double widerstand,double strom){return widerstand*(strom*strom);}
 	
 }
