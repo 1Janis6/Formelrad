@@ -49,7 +49,16 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
+	/* Hier die Methoden mit den Formlen hinzufï¿½gen
 	 */
-	
+	//Feature 3
+	public double uAusRundI (double wiederstand, double strom){
+		return wiederstand*strom;
+	}
+	public double uAusPundI(double leistung, double strom){
+		return leistung/strom;
+	}
+	public double uAusPundR(double leistung, double wiederstand){
+		return Math.sqrt(leistung*wiederstand);
+	}
 }
