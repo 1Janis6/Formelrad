@@ -61,4 +61,9 @@ public class Calculator {
 	public double uAusPundR(double leistung, double wiederstand){
 		return Math.sqrt(leistung*wiederstand);
 	}
+
+	//Feature 5 
+	public double rAusUundI(double spannung, double strom){
+		return spannung/strom;
+	}
 }
