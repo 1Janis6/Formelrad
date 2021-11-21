@@ -60,5 +60,6 @@ public class Calculator {
 	// feature 4
 	public double IausPundR (double leistung, double widerstand){return (Math.sqrt(leistung/widerstand));}
 	public double IausPundU(double leistung, double spannung){return (leistung/spannung);}
+	public double IausUundR(double spannung, double widerstand){return (spannung/widerstand);}
 	
 }
