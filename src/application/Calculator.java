@@ -49,7 +49,12 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
+	/* Hier die Methoden mit den Formlen hinzufï¿½gen
 	 */
+
+	// feature 2
+	public double pAusUundI (double spannung, double strom){
+		return spannung*strom;
+	}
 	
 }
