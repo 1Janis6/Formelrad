@@ -86,6 +86,20 @@ public class Calculator {
 	  System.out.println("Strom wird aus Spannung und Widerstand berechnet");
     }
 
+
+    if (getWiderstand() != 0 && getStrom() != 0) {
+      uAusRundI(getLeistung(), getStrom());
+	  System.out.println("Spannung wird aus Strom und Widerstand berechnet");
+    }
+    if (getLeistung() != 0 && getStrom() != 0) {
+      uAusPundI(getLeistung(), getStrom());
+	  System.out.println("Spannung wird aus Leistung und Strom berechnet");
+    }
+    if (getLeistung() != 0 && getWiderstand() != 0) {
+      uAusPundR(getLeistung(), getWiderstand());
+	  System.out.println("Spannung wird aus Leistung und Widerstand berechnet");
+    }
+
   // feature 2
   public double pAusUundI(double spannung, double strom) {
     return spannung * strom;
