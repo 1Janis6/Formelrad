@@ -73,7 +73,18 @@ public class Calculator {
 	public double uAusPundR(double leistung, double wiederstand){
 		return Math.sqrt(leistung*wiederstand);
 	}
-
+  
+  // feature 4
+	public double IausPundR (double leistung, double widerstand){
+    return (Math.sqrt(leistung/widerstand));
+  }
+	public double IausPundU(double leistung, double spannung){
+    return (leistung/spannung);
+  }
+	public double IausUundR(double spannung, double widerstand){
+    return (spannung/widerstand);
+  }
+  
 	//Feature 5 
 	public double rAusUundI(double spannung, double strom){
 		return spannung/strom;
