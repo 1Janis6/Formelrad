@@ -97,10 +97,13 @@ public class Main extends Application {
 				Calculator myCalculator = new Calculator(
 						power, tension, current, resistence);
 					
-				txLeistung.setText(Double.toString(myCalculator.getLeistung()));
-				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
-				txStrom.setText(Double.toString(myCalculator.getStrom()));
-				txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+
+				//Feature 8
+
+				if (txLeistung.getText().isEmpty != false){
+					txLeistung.setText(Double.toString(myCalculator.getLeistung()));
+					txLeistung.setStyle("-fx-text-inner-color: red;")
+				}
 			});
 
 			Scene scene = new Scene(root, 330, 490);
