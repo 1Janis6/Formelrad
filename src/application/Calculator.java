@@ -47,6 +47,45 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+
+		if (getSpannung() != 0 && getStrom() != 0){
+			pAusUundI(getSpannung(), getStrom());
+		}
+		if (getWiderstand() != 0 && getStrom() != 0){
+			pAusRundI(getWiderstand(), getStrom());
+		}
+		if (getSpannung() != 0 && getWiderstand() != 0){
+			pAusUundR(getSpannung(), getWiderstand());
+		}
+
+		if (getLeistung() != 0 && getWiderstand() != 0){
+			IausPundR(getLeistung(), getWiderstand());
+		}
+		if (getLeistung() != 0 && getSpannung() != 0){
+			IausPundU(getLeistung(), getSpannung());
+		}
+		if (getSpannung() != 0 && getWiderstand() != 0){
+			IausUundR(getSpannung(), getWiderstand());
+		}
+		if (getWiderstand() != 0 && getStrom() != 0){
+			uAusRundI(getLeistung(),getStrom());
+		}
+		if (getLeistung() != 0 && getStrom() != 0){
+			uAusPundI(getLeistung(),getStrom());
+		}
+		if (getLeistung() != 0 && getWiderstand() != 0){
+			uAusPundR(getLeistung(), getWiderstand());
+		}
+		if (getSpannung() != 0 && getStrom() != 0){
+			rAusUundI(getSpannung(), getStrom());
+		}
+		if (getLeistung() != 0 && getStrom() != 0){
+			rAusPundI(getLeistung(), getStrom());
+		}
+		if (getSpannung() != 0 && getLeistung() != 0){
+			rAusUundP(getSpannung(), getLeistung());
+		}
+
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
