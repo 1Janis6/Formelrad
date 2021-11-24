@@ -99,9 +99,13 @@ public class Main extends Application {
 					
 
 				//Feature 8
-
+				
 				if (txLeistung.getText().isEmpty != false){
 					txLeistung.setText(Double.toString(myCalculator.getLeistung()));
+					txLeistung.setStyle("-fx-text-inner-color: red;")
+				}
+				if (txLeistung.getText().isEmpty != false){
+					txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 					txLeistung.setStyle("-fx-text-inner-color: red;")
 				}
 			});
