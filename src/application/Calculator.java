@@ -47,6 +47,16 @@ public class Calculator {
 		/* Hier auf Grund der vorhanden Werte entscheiden
 		 * welche Methode unten aufgerufen werden muss.
 		 */
+
+		if (getSpannung() != 0 && getStrom() != 0){
+			pAusUundI(getSpannung(), getStrom());
+		}
+		if (getWiderstand() != 0 && getStrom() != 0){
+			pAusRundI(getWiderstand(), getStrom());
+		}
+		if (getSpannung() != 0 && getWiderstand() != 0){
+			pAusUundR(getSpannung(), getWiderstand());
+		}
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
