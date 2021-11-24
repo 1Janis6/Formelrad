@@ -112,6 +112,11 @@ public class Main extends Application {
 					txStrom.setText(Double.toString(myCalculator.getStrom()));
 					txLeistung.setStyle("-fx-text-inner-color: red;")
 				}
+				if (txLeistung.getText().isEmpty != false){
+					txWiderstand.setText(Double.toString(myCalculator.getWiderstand()));
+					txLeistung.setStyle("-fx-text-inner-color: red;")
+				}
+			});
 
 			Scene scene = new Scene(root, 330, 490);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
