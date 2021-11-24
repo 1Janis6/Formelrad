@@ -57,45 +57,112 @@ public class Calculator {
   }
 
   public void calculate() {
+
     //Feature 6
 
     if (getSpannung() != 0 && getStrom() != 0) {
-      pAusUundI(getSpannung(), getStrom());
+		alert = alert + 2;
+      	pAusUundI(getSpannung(), getStrom());
+
+		  if(getWiderstand() != 0 || getLeistung() != 0){
+			  alert++;
+		  }
     }
     if (getWiderstand() != 0 && getStrom() != 0) {
-      pAusRundI(getWiderstand(), getStrom());
+		alert = alert + 2;
+      	pAusRundI(getWiderstand(), getStrom());
+
+		  if(getSpannung() != 0 || getLeistung() != 0){
+			alert++;
+		}
     }
     if (getSpannung() != 0 && getWiderstand() != 0) {
-      pAusUundR(getSpannung(), getWiderstand());
+		alert = alert + 2;
+      	pAusUundR(getSpannung(), getWiderstand());
+
+		  if(getStrom() != 0 || getLeistung() != 0){
+			alert++;
+		}
     }
 
     if (getLeistung() != 0 && getWiderstand() != 0) {
-      IausPundR(getLeistung(), getWiderstand());
+		alert = alert + 2;
+      	IausPundR(getLeistung(), getWiderstand());
+
+		  if(getStorm() != 0 || getSpannung() != 0){
+			alert++;
+		}
     }
     if (getLeistung() != 0 && getSpannung() != 0) {
-      IausPundU(getLeistung(), getSpannung());
+		alert = alert + 2;
+      	IausPundU(getLeistung(), getSpannung());
+
+		  if(getWiderstand() != 0 || getStrom() != 0){
+			alert++;
+		}
     }
     if (getSpannung() != 0 && getWiderstand() != 0) {
-      IausUundR(getSpannung(), getWiderstand());
+		alert = alert + 2;
+      	IausUundR(getSpannung(), getWiderstand());
+
+		  if(getStrom() != 0 || getLeistung() != 0){
+			alert++;
+		}
     }
     if (getWiderstand() != 0 && getStrom() != 0) {
-      uAusRundI(getLeistung(), getStrom());
+		alert = alert + 2;
+      	uAusRundI(getLeistung(), getStrom());
+
+		  if(getSpannung() != 0 || getLeistung() != 0){
+			alert++;
+		}
     }
     if (getLeistung() != 0 && getStrom() != 0) {
-      uAusPundI(getLeistung(), getStrom());
+		alert = alert + 2;
+      	uAusPundI(getLeistung(), getStrom());
+
+		  if(getWiderstand() != 0 || getSpannung() != 0){
+			alert++;
+		}
     }
     if (getLeistung() != 0 && getWiderstand() != 0) {
-      uAusPundR(getLeistung(), getWiderstand());
+		alert = alert + 2;
+      	uAusPundR(getLeistung(), getWiderstand());
+
+		  if(getStrom() != 0 || getSpannung() != 0){
+			alert++;
+		}
     }
     if (getSpannung() != 0 && getStrom() != 0) {
-      rAusUundI(getSpannung(), getStrom());
+		alert = alert + 2;
+      	rAusUundI(getSpannung(), getStrom());
+
+		  if(getWiderstand() != 0 || getLeistung() != 0){
+			alert++;
+		}
     }
     if (getLeistung() != 0 && getStrom() != 0) {
-      rAusPundI(getLeistung(), getStrom());
+		alert = alert + 2;
+      	rAusPundI(getLeistung(), getStrom());
+
+		  if(getWiderstand() != 0 || getSpannung() != 0){
+			alert++;
+		}
     }
     if (getSpannung() != 0 && getLeistung() != 0) {
-      rAusUundP(getSpannung(), getLeistung());
+		alert = alert + 2;
+      	rAusUundP(getSpannung(), getLeistung());
+
+		  if(getWiderstand() != 0 || getStrom() != 0){
+			alert++;
+		}
     }
+
+	//Feature 7
+	int alert = 0;
+	if (alert >= 3){
+		System.out.println("Mehr als zwei Felder gefüllt");
+	}
   }
 
   // feature 2
@@ -131,6 +198,7 @@ public class Calculator {
 
   public double IausPundU(double leistung, double spannung) {
     return (leistung / spannung);
+    
   }
 
   public double IausUundR(double spannung, double widerstand) {
@@ -149,4 +217,5 @@ public class Calculator {
   public double rAusUundP(double spannung, double leistung) {
     return spannung * spannung / leistung;
   }
+
 }
