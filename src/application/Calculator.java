@@ -76,6 +76,16 @@ public class Calculator {
 		if (getLeistung() != 0 && getWiderstand() != 0){
 			uAusPundR(getLeistung(), getWiderstand());
 		}
+		if (getSpannung() != 0 && getStrom() != 0){
+			rAusUundI(getSpannung(), getStrom());
+		}
+		if (getLeistung() != 0 && getStrom() != 0){
+			rAusPundI(getLeistung(), getStrom());
+		}
+		if (getSpannung() != 0 && getLeistung() != 0){
+			rAusUundP(getSpannung(), getLeistung());
+		}
+
 	}
 	
 	/* Hier die Methoden mit den Formlen hinzuf�gen
