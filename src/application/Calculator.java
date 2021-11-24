@@ -61,42 +61,17 @@ public class Calculator {
 
     if (getSpannung() != 0 && getStrom() != 0) {
       pAusUundI(getSpannung(), getStrom());
+	  System.out.println("Leistung wird aus Spannung und Strom berechnet");
     }
     if (getWiderstand() != 0 && getStrom() != 0) {
       pAusRundI(getWiderstand(), getStrom());
+	  System.out.println("Leistung wird aus Widerstand und Strom berechnet");
     }
     if (getSpannung() != 0 && getWiderstand() != 0) {
       pAusUundR(getSpannung(), getWiderstand());
+	  System.out.println("Leistung wird aus Spannung und Widerstand berechnet");
     }
 
-    if (getLeistung() != 0 && getWiderstand() != 0) {
-      IausPundR(getLeistung(), getWiderstand());
-    }
-    if (getLeistung() != 0 && getSpannung() != 0) {
-      IausPundU(getLeistung(), getSpannung());
-    }
-    if (getSpannung() != 0 && getWiderstand() != 0) {
-      IausUundR(getSpannung(), getWiderstand());
-    }
-    if (getWiderstand() != 0 && getStrom() != 0) {
-      uAusRundI(getLeistung(), getStrom());
-    }
-    if (getLeistung() != 0 && getStrom() != 0) {
-      uAusPundI(getLeistung(), getStrom());
-    }
-    if (getLeistung() != 0 && getWiderstand() != 0) {
-      uAusPundR(getLeistung(), getWiderstand());
-    }
-    if (getSpannung() != 0 && getStrom() != 0) {
-      rAusUundI(getSpannung(), getStrom());
-    }
-    if (getLeistung() != 0 && getStrom() != 0) {
-      rAusPundI(getLeistung(), getStrom());
-    }
-    if (getSpannung() != 0 && getLeistung() != 0) {
-      rAusUundP(getSpannung(), getLeistung());
-    }
-  }
 
   // feature 2
   public double pAusUundI(double spannung, double strom) {
